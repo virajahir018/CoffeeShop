@@ -1,6 +1,6 @@
 :root {
     --background: #dbd7c9;
-    --header-background: #161515;
+    --header-background: linear-gradient(135deg, #010000d5 20%, #57321fd8 250% );
     --i-color: #ac961c;
     --text-color: #745124;
 }
@@ -14,9 +14,9 @@
 }
 
 body {
-
+    background: linear-gradient(135deg, #010000 20%, #57321f 250% );
+    /* background: var(--background); */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: var(--background);
     line-height: 1.7;
     overflow-x: hidden;
 
@@ -24,7 +24,7 @@ body {
 
 header {
 
-    /* background: var(--header-background); */
+    background: var(--header-background);
     position: fixed;
     width: 100%;
     top: 0;
@@ -165,7 +165,7 @@ nav a:hover::after{
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding: 150px 0px;
+    padding: 150px 0px 90px 0px;
     color: white;
 }
 
@@ -176,7 +176,7 @@ nav a:hover::after{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #010000 20%, #57321f 250% );
+    
     z-index: -1;
 }
 
@@ -187,19 +187,19 @@ nav a:hover::after{
     /* align-items: center; */
 }
 
-.container{
+.h-container{
     display: flex;
     align-items: center;
 }
 
-.hero-subtitale{
+.hero-subtitle{
     color: var(--text-color);
     font-size: 30px;
 
 }
 
 
-.hero-subtitale i{
+.hero-subtitle i{
     color: var(--i-color);
 }
 
@@ -210,6 +210,7 @@ nav a:hover::after{
 
 .hero-text{
     color: #afa091;
+    /* max-width: 700px; */
 }
 
 .hero-text i{
@@ -219,5 +220,10 @@ nav a:hover::after{
 
 .hero-buttons{
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.line{
+    border: 2px solid var(--i-color);
 }
