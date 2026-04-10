@@ -1,0 +1,223 @@
+:root {
+    --background: #dbd7c9;
+    --header-background: #161515;
+    --i-color: #ac961c;
+    --text-color: #745124;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--background);
+    line-height: 1.7;
+    overflow-x: hidden;
+
+}
+
+header {
+
+    /* background: var(--header-background); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    transition: all 0.4s ease;
+
+}
+
+.container {
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+
+}
+
+.logo i {
+
+    color: var(--i-color);
+    font-size: 28px;
+
+}
+
+.logo-text {
+
+    font-family: serif;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #745124;
+}
+
+.logo span {
+
+    color: var(--i-color);
+}
+
+nav ul {
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+nav a::after{
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--i-color);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after{
+
+    width: 100%;
+}
+
+.nav-buttons{
+
+    display: flex;
+    gap: 15px;
+}
+
+.btn{
+
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-primary{
+
+    background: var(--i-color);
+    color: #57321f;
+}
+
+.btn-primary:hover{
+
+    background: transparent;
+    border: 2px solid var(--i-color);
+    color: var(--i-color);
+}
+
+.btn-secondary {
+    border: 1px solid var(--i-color);
+    color: var(--i-color);
+}
+
+
+.btn-secondary:hover{
+    background: var(--i-color);
+    color: #57321f;
+}
+
+.hero{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0px;
+    color: white;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #010000 20%, #57321f 250% );
+    z-index: -1;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* align-items: center; */
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.hero-subtitale{
+    color: var(--text-color);
+    font-size: 30px;
+
+}
+
+
+.hero-subtitale i{
+    color: var(--i-color);
+}
+
+.hero-title{
+    color: var(--i-color);
+    font-size: 40px;
+}
+
+.hero-text{
+    color: #afa091;
+}
+
+.hero-text i{
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 10px;
+}
