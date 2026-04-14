@@ -268,17 +268,18 @@ nav a:hover::after {
     display: flex;
     align-items: center;
     gap: 30px;
-    /* padding: 20px 0px; */
     margin-top: 80px;
 }
 
 .product1 {
     /* border: 1px solid var(--i-color); */
+    background: #180c02;
     width: 33.33%;
     height: auto;
-    overflow: hidden;
     border-radius: 20px;
-    background: #180c02;
+    position: relative;
+    overflow: hidden;
+    top: 0;
 }
 
 .product1 img {
@@ -295,37 +296,24 @@ nav a:hover::after {
 
 .product-tag{
     background: var(--i-color);
+    border-radius: 50px;
     padding: 10px 10px;
-    border-radius: 50px;
     font-weight: bold;
-    color: white;
-    position: relative;
-    bottom: 20px;
-    left: 180px;
-    font-size: 13px;
-}
-.product-tag3{
-    padding: 15px 25px;
-    border-radius: 50px;
-    font-weight: bold;
-    color: white;
-    position: relative;
-    bottom: 20px;
-    left: 110px;
-    font-size: 13px;
-    letter-spacing: 1px;
+    /* font-size: 12px; */
+    position: absolute;
+    top: -28px;
+    right: 25px;
 }
 
 .product-tag2{
-   background: var(--i-color);
-       padding: 10px 15px;
+  background: var(--i-color);
     border-radius: 50px;
+    padding: 10px 15px;
     font-weight: bold;
-    color: white;
-    position: relative;
-    bottom: 20px;
-    left: 210px;
-    font-size: 13px;
+    /* font-size: 12px; */
+    position: absolute;
+    top: -28px;
+    right: 25px;
 }
 
 .product-price {
@@ -348,6 +336,7 @@ nav a:hover::after {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
+    position: relative;
     /* align-items: center; */
 }
