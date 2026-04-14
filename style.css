@@ -299,9 +299,9 @@ nav a:hover::after {
     border-radius: 50px;
     font-weight: bold;
     color: white;
-    position: relative;
-    bottom: 270px;
-    left: 220px;
+    position: absolute;
+    bottom: -515px;
+    left: 240px;
     letter-spacing: 1px;
 }
 .product-tag2{
@@ -310,9 +310,9 @@ nav a:hover::after {
     border-radius: 50px;
     font-weight: bold;
     color: white;
-    position: relative;
-    bottom: 270px;
-    left: 275px;
+    position: absolute;
+    bottom: -515px;
+    right: 90px;
     letter-spacing: 1px;
 }
 
