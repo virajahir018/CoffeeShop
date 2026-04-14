@@ -275,7 +275,7 @@ nav a:hover::after {
 .product1 {
     /* border: 1px solid var(--i-color); */
     width: 33.33%;
-    height: 518px;
+    height: auto;
     overflow: hidden;
     border-radius: 20px;
     background: #180c02;
@@ -289,32 +289,44 @@ nav a:hover::after {
 
 .product-title {
     font-family: serif;
-    font-size: 30px;
+    font-size: 23px;
     color: rgb(192, 191, 188);
 }
 
 .product-tag{
     background: var(--i-color);
-    padding: 15px 25px;
+    padding: 10px 10px;
     border-radius: 50px;
     font-weight: bold;
     color: white;
     position: relative;
     bottom: 20px;
     left: 180px;
-    letter-spacing: 1px;
+    font-size: 13px;
 }
-/* .product-tag2{
-    background: var(--i-color);
+.product-tag3{
     padding: 15px 25px;
     border-radius: 50px;
     font-weight: bold;
     color: white;
     position: relative;
-    bottom: 270px;
-    left: 275px;
+    bottom: 20px;
+    left: 110px;
+    font-size: 13px;
     letter-spacing: 1px;
-} */
+}
+
+.product-tag2{
+   background: var(--i-color);
+       padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    bottom: 20px;
+    left: 210px;
+    font-size: 13px;
+}
 
 .product-price {
     color: var(--i-color);
@@ -336,6 +348,6 @@ nav a:hover::after {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px;
+    padding: 0px 20px 20px 20px;
     /* align-items: center; */
 }
