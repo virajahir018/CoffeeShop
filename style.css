@@ -299,22 +299,22 @@ nav a:hover::after {
     border-radius: 50px;
     font-weight: bold;
     color: white;
-    position: absolute;
-    bottom: -515px;
-    left: 240px;
+    position: relative;
+    bottom: 20px;
+    left: 180px;
     letter-spacing: 1px;
 }
-.product-tag2{
+/* .product-tag2{
     background: var(--i-color);
     padding: 15px 25px;
     border-radius: 50px;
     font-weight: bold;
     color: white;
-    position: absolute;
-    bottom: -515px;
-    right: 90px;
+    position: relative;
+    bottom: 270px;
+    left: 275px;
     letter-spacing: 1px;
-}
+} */
 
 .product-price {
     color: var(--i-color);
