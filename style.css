@@ -1,6 +1,6 @@
 :root {
     --background: #dbd7c9;
-    --header-background: linear-gradient(135deg, #010000d5 20%, #57321fd8 250% );
+    --header-background: linear-gradient(135deg, #010000d5 20%, #57321fd8 250%);
     --i-color: #ac961c;
     --text-color: #745124;
 }
@@ -14,7 +14,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #010000 20%, #57321f 250% );
+    background: linear-gradient(135deg, #010000 40%, #57321f 20%);
     /* background: var(--background); */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.7;
@@ -42,7 +42,7 @@ header {
 
 }
 
-.header-container{
+.header-container {
 
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ nav a {
     transition: all 0.3s ease;
 }
 
-nav a::after{
+nav a::after {
 
     content: '';
     position: absolute;
@@ -110,18 +110,18 @@ nav a::after{
     transition: width 0.3s ease;
 }
 
-nav a:hover::after{
+nav a:hover::after {
 
     width: 100%;
 }
 
-.nav-buttons{
+.nav-buttons {
 
     display: flex;
     gap: 15px;
 }
 
-.btn{
+.btn {
 
     display: inline-block;
     padding: 8px 20px;
@@ -133,16 +133,16 @@ nav a:hover::after{
     font-size: 16px;
 }
 
-.btn-primary{
+.btn-primary {
 
     background: var(--i-color);
     color: #57321f;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
 
     background: transparent;
-    border: 2px solid var(--i-color);
+    border: 1px solid var(--i-color);
     color: var(--i-color);
 }
 
@@ -152,12 +152,12 @@ nav a:hover::after{
 }
 
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background: var(--i-color);
     color: #57321f;
 }
 
-.hero{
+.hero {
     height: auto;
     width: 100%;
     margin: auto;
@@ -169,61 +169,173 @@ nav a:hover::after{
     color: white;
 }
 
-.hero::before{
+.hero::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
+
     z-index: -1;
 }
 
-.hero-container{
+.hero-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
     /* align-items: center; */
 }
 
-.h-container{
+.h-container {
     display: flex;
     align-items: center;
 }
 
-.hero-subtitle{
+.hero-subtitle {
     color: var(--text-color);
     font-size: 30px;
 
 }
 
 
-.hero-subtitle i{
+.hero-subtitle i {
     color: var(--i-color);
 }
 
-.hero-title{
+.hero-title {
     color: var(--i-color);
     font-size: 40px;
 }
 
-.hero-text{
+.hero-text {
     color: #afa091;
     /* max-width: 700px; */
 }
 
-.hero-text i{
+.hero-text i {
     color: var(--text-color);
     font-size: 20px;
 }
 
-.hero-buttons{
+.hero-buttons {
     display: flex;
     gap: 20px;
     padding-top: 10px;
 }
 
-.line{
+.line {
     border: 2px solid var(--i-color);
+}
+
+.section-header {
+    color: var(--i-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 150px;
+}
+
+.section-subtitle {
+    font-size: 30px;
+
+}
+
+.section-header h2 {
+    font-size: 50px;
+}
+
+.section-header span {
+    border: 2px solid var(--i-color);
+    width: 120px;
+
+}
+
+.section-header p {
+    font-size: 20px;
+    color: white;
+}
+
+
+.product-info {
+    color: white;
+}
+
+.product-grid {
+    /* border: 1px solid var(--i-color); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* padding: 20px 0px; */
+    margin-top: 80px;
+}
+
+.product1 {
+    /* border: 1px solid var(--i-color); */
+    width: 33.33%;
+    height: 518px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #180c02;
+}
+
+.product1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-title {
+    font-family: serif;
+    font-size: 30px;
+    color: rgb(192, 191, 188);
+}
+
+.product-tag{
+    background: var(--i-color);
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    bottom: 270px;
+    left: 220px;
+    letter-spacing: 1px;
+}
+.product-tag2{
+    background: var(--i-color);
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    bottom: 270px;
+    left: 275px;
+    letter-spacing: 1px;
+}
+
+.product-price {
+    color: var(--i-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product1 p {
+    color: #929090;
+}
+
+.product-price span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    /* align-items: center; */
 }
