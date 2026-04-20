@@ -398,6 +398,11 @@ footer {
     border-radius: 50px;
 }
 
+.social-link a:hover{
+    background: var(--i-color);
+    color: #180c02;
+}
+
 .footer-column h3,
 .footer-content h3 {
     font-size: 22px;
@@ -466,7 +471,7 @@ p {
 
     .header-container {
         justify-content: start;
-        gap: 30px;
+        gap: 33px;
     }
 
     .container {
@@ -546,6 +551,7 @@ p {
 
     .section-header p {
         font-size: 15px;
+        text-align: center;
     }
 
     .product-grid{
