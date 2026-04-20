@@ -266,6 +266,7 @@ nav a:hover::after {
     align-items: center;
     gap: 30px;
     margin-top: 80px;
+
 }
 
 .product1 {
@@ -343,7 +344,7 @@ footer {
     background: #180c02;
     color: white;
     margin-top: 100px;
-    padding: 50px 0px;
+    padding-top: 50px;
 }
 
 
@@ -351,7 +352,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding-bottom: 40px; */
+    border-bottom: 1px solid grey;
+    padding-bottom: 40px;
 }
 
 .footer-content {
@@ -360,26 +362,11 @@ footer {
     flex-direction: column;
     gap: 30px;
 }
-.footer-content h3, .footer-column h3{
-    position: relative;
-    padding: 10px 0px;
-}
 
-.footer-content h3::after,.footer-column h3::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;  
-    height: 2px;
-    background: var(--i-color);
-}
-/* 
 .footer-content h3,
 .footer-column h3 {
     position: relative;
-    padding: 10px 0;
-    display: inline-block;
+    padding: 10px 0px;
 }
 
 .footer-content h3::after,
@@ -388,16 +375,10 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0;
+    width: 50px;
     height: 2px;
     background: var(--i-color);
-    transition: width 0.4s ease;
 }
-
-.footer-content h3:hover::after,
-.footer-column h3:hover::after {
-    width: 50px;
-} */
 
 
 .footer-column {
@@ -417,16 +398,195 @@ footer {
     border-radius: 50px;
 }
 
-.footer-column h3, .footer-content h3 {
+.footer-column h3,
+.footer-content h3 {
     font-size: 22px;
 }
 
-.footer-column a, li, p{
-     text-decoration: none;
-     list-style: none;
-     color: grey;
+.footer-column a,
+li,
+p {
+    text-decoration: none;
+    list-style: none;
+    color: grey;
 }
 
-.footer-column i{
+.footer-column i {
     color: var(--i-color);
+}
+
+
+.copyright {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* @media (max-width : 768px) {
+
+    .header-container{
+        justify-content: start;
+        gap: 5px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .nav-buttons{
+        gap: 5px;
+    }
+
+     .btn{
+        width: 60px;
+        height: 40px;
+        border-radius: 2px;
+    }
+    .product-grid{
+        flex-direction: column;
+    }
+
+    .product1{
+        width: 90%;
+    }
+    
+} */
+
+@media (max-width: 992px) {
+
+    .copyright {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+
+    .header-container {
+        justify-content: start;
+        gap: 30px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .logo i {
+        font-size: 22px;
+    }
+
+    nav ul {
+        display: none;
+        /* gap: 10px; */
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .nav-buttons {
+        gap: 5px;
+    }
+
+    .btn {
+        border-radius: 15px;
+        font-size: 10px;
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    
+    .hero {
+        padding-top: 100px;
+    }
+
+    .h-container{
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-buttons .btn{
+        padding: 5px 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .hero img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+    .section-header{
+        width: 90%;
+        margin: auto;
+    }
+
+    .section-header h2 {
+        font-size: 26px;
+    }
+
+    .section-header p {
+        font-size: 15px;
+    }
+
+    .product-grid{
+        flex-direction: column;
+    }
+
+    .product1{
+        width: 90%;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+    }
+
+    .product-info {
+        padding: 15px;
+    }
+
+    .product-tag,
+    .product-tag2 {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-column{
+        width: 90%;
+        padding: 0;
+    }
+
+    .footer-content{
+        width: 90%;
+    }
+
+    /* .social-link {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    } */
 }
